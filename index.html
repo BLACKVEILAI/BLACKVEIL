@@ -3,22 +3,78 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BLACKVEIL</title>
+  <title>BLACKVEIL - Login</title>
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
     body {
-      background-color: #000;
-      color: #0ff;
-      font-family: Arial, sans-serif;
+      background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      color: #f0f0f0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: 0;
+    }
+    .container {
+      position: relative;
+      z-index: 1;
       text-align: center;
-      padding-top: 100px;
+      max-width: 400px;
+      padding: 40px;
+      background-color: rgba(0, 0, 0, 0.7);
+      border: 1px solid #444;
+      border-radius: 8px;
     }
     h1 {
-      font-size: 48px;
-      letter-spacing: 2px;
+      font-size: 28px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+    p {
+      font-size: 14px;
+      margin-bottom: 30px;
+      color: #ccc;
+    }
+    .button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      background-color: #222;
+      border: 1px solid #555;
+      color: #f0f0f0;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    .button:hover {
+      background-color: #333;
     }
   </style>
 </head>
 <body>
-  <h1>BLACKVEIL SITE ONLINE</h1>
+  <div class="overlay"></div>
+  <div class="container">
+    <h1>Welcome to BLACKVEIL</h1>
+    <p>The Digital Empire Begins Here</p>
+    <button class="button">Login</button>
+    <button class="button">Create Account</button>
+  </div>
 </body>
 </html>
